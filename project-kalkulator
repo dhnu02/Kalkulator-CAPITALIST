@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+class Kalkulator{
+	private:
+		float x, y, hasil;
+	public:
+		void Pertambahan();
+                void Pembagian();
+};
+
+void Kalkulator::Pertambahan(){
+	cout<<"Masukkan bilangan pertama : ";
+	cin>>x;
+	cout<<"Masukkan bilangan kedua : ";
+	cin>>y;
+	hasil = x+y;
+	cout<<"Hasil Pertambahan adalah "<<hasil;
+}
+
+void Kalkulator::Pembagian(){
+	cout<<"Masukkan bilangan pertama : ";
+	cin>>x;
+	cout<<"Masukkan bilangan kedua : ";
+	cin>>y;
+	hasil = x/y;
+	cout<<"Hasil Pembagian adalah "<<hasil;
+}
+
+int main(){
+	Kalkulator kal;
+	kal.Pertambahan();
+        kal.Pembagian();
+}
