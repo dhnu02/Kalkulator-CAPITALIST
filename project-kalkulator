@@ -6,7 +6,9 @@ class Kalkulator{
 		float x, y, hasil;
 	public:
 		void Pertambahan();
+		void Pengurangan();
                 void Pembagian();
+		void Perkalian();
 };
 
 void Kalkulator::Pertambahan(){
@@ -18,6 +20,15 @@ void Kalkulator::Pertambahan(){
 	cout<<"Hasil Pertambahan adalah "<<hasil;
 }
 
+void Kalkulator::Pengurangan(){
+	cout<<"Masukkan bilangan pertama : ";
+	cin>>x;
+	cout<<"Masukkan bilangan kedua : ";
+	cin>>y;
+	hasil = x-y;
+	cout<<"Hasil Pengurangan adalah "<<hasil;
+}
+
 void Kalkulator::Pembagian(){
 	cout<<"Masukkan bilangan pertama : ";
 	cin>>x;
@@ -27,8 +38,19 @@ void Kalkulator::Pembagian(){
 	cout<<"Hasil Pembagian adalah "<<hasil;
 }
 
+void Kalkulator::Perkalian(){
+	cout<<"Masukkan bilangan pertama : ";
+	cin>>x;
+	cout<<"Masukkan bilangan kedua : ";
+	cin>>y;
+	hasil = x*y;
+	cout<<"Hasil Perkalian adalah "<<hasil;
+}
+
 int main(){
 	Kalkulator kal;
 	kal.Pertambahan();
+	kal.Pengurangan();
         kal.Pembagian();
+	kal.Perkalian();
 }
