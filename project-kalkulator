@@ -1,0 +1,78 @@
+#include<iostream>
+using namespace std;
+
+class Kalkulator{
+	private:
+		float x, y, hasil;
+	public:
+		void Pertambahan();
+		void Pengurangan();
+                void Pembagian();
+		void Perkalian();
+};
+
+void Kalkulator::Pertambahan(){
+	cout<<"\nMasukkan bilangan pertama : ";
+	cin>>x;
+	cout<<"Masukkan bilangan kedua : ";
+	cin>>y;
+	hasil = x+y;
+	cout<<"Hasil Pertambahan adalah "<<hasil;
+}
+
+void Kalkulator::Pengurangan(){
+	cout<<"\nMasukkan bilangan pertama : ";
+	cin>>x;
+	cout<<"Masukkan bilangan kedua : ";
+	cin>>y;
+	hasil = x-y;
+	cout<<"Hasil Pengurangan adalah "<<hasil;
+}
+
+void Kalkulator::Pembagian(){
+	cout<<"\nMasukkan bilangan pertama : ";
+	cin>>x;
+	cout<<"Masukkan bilangan kedua : ";
+	cin>>y;
+	hasil = x/y;
+	cout<<"Hasil Pembagian adalah "<<hasil;
+}
+
+void Kalkulator::Perkalian(){
+	cout<<"\nMasukkan bilangan pertama : ";
+	cin>>x;
+	cout<<"Masukkan bilangan kedua : ";
+	cin>>y;
+	hasil = x*y;
+	cout<<"Hasil Perkalian adalah "<<hasil;
+}
+
+int main(){
+	int pilih;
+	Kalkulator kal;
+	
+	cout<<"Silahkan pilih operasi aritmatika : "<<endl;
+	cout<<"1. Pertambahan"<<endl;
+	cout<<"2. Pengurangan"<<endl;
+	cout<<"3. Pembagian"<<endl;
+	cout<<"4. Perkalian"<<endl;
+	cout<<"Masukkan pilihan : ";
+	cin>>pilih;
+	
+	switch(pilih){
+		case 1:
+			kal.Pertambahan();
+			break;
+		case 2:
+			kal.Pengurangan();
+			break;
+		case 3:
+			kal.Pembagian();
+			break;
+		case 4:
+			kal.Perkalian();
+			break;
+		default:
+			cout<<"Pilihan tidak tersedia.";
+	}
+}
