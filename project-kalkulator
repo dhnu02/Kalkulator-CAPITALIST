@@ -49,8 +49,10 @@ void Kalkulator::Perkalian(){
 }
 
 int main(){
-	int pilih;
+	int pilih;char lagi;
 	Kalkulator kal;
+
+do {
 	
 	cout<<"Silahkan pilih operasi aritmatika : "<<endl;
 	cout<<"1. Pertambahan"<<endl;
@@ -74,6 +76,8 @@ int main(){
 			kal.Perkalian();
 			break;
 		default:
-			cout<<"Pilihan tidak tersedia.";
+			cout<<"Pilihan tidak tersedia.";break;
 	}
+cout<<"Apakah ingin melakukan perhitungan lagi? (Y/N) : ";cin>>lagi;
+}while(lagi != 'y'||'Y');
 }
